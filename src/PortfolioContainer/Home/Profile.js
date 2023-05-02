@@ -1,5 +1,5 @@
 import React from 'react';
-import Typical from 'react-typical';
+import { TypeAnimation } from 'react-type-animation';
 import './Profile.scss';
 
 export default function Profile() {
@@ -31,9 +31,9 @@ export default function Profile() {
                             {" "}
                             <h1>
                                 {" "}
-                                <Typical
-                                loop={Infinity}
-                                steps={[
+                                <TypeAnimation
+                                repeat={Infinity}
+                                sequence={[
                                     "Frontend Dev 💻",
                                     1000,
                                     "React/React Native Dev 📱",

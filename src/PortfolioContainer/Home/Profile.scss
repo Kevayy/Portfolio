@@ -17,13 +17,14 @@
 
     &-details-name {
         font-size: 24px;
-        font-family: "Futura SemiBold";
+        font-family: "Poppins SemiBold";
     }
 
     &-details-role {
         display: flex;
         flex-direction: column;
         margin: 14px 0 24px 0;
+
         h1 {
             font-size: 40px;
             font-family: cursive;
@@ -33,12 +34,13 @@
     &-role-tagline {
         font-size: 19px;
         margin: 5px 0 0 0;
-        font-family: "Futura Light";
+        font-family: "Poppins Light";
     }
 
     &-options {
         .highlighted-btn {
             margin: 0 0 0 28px;
+
             &:hover {
                 margin: 0 0 0 28px;
                 background-color: cornsilk;
@@ -51,7 +53,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 1px 0p 0px var(--white);
+        box-shadow: 0 1px 0px 0px var(--white);
         border-radius: 50%;
         height: 380px;
         width: 380px;
@@ -65,6 +67,11 @@
             border-radius: 50%;
             background-repeat: no-repeat;
             background-position: center;
+
+            &:hover {
+                transform: scale(1.07);
+                transition: 1s ease-out;
+            }
         }
     }
 }
@@ -74,5 +81,17 @@
 }
 
 .highlighted-text {
-    color: var(--dark-orange);
+    color: var(---dark-orange);
+}
+
+.colz {
+    &-icon i {
+        color: white;
+        padding: 8px;
+        padding-left: 0px;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
 }
