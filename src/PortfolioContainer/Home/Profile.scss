@@ -6,7 +6,7 @@
         justify-content: center;
         height: 10%;
         min-height: fit-content;
-        background-image: url('../../assets/Home/bg.jpg');
+        background-image: url("../../assets/Home/bg.jpg");
     }
 
     &-parent {
@@ -15,31 +15,34 @@
         color: aliceblue;
     }
 
-    &-details-name {
-        font-size: 24px;
-        font-family: "Poppins SemiBold";
-    }
-
-    &-details-role {
-        display: flex;
-        flex-direction: column;
-        margin: 14px 0 24px 0;
-
-        h1 {
-            font-size: 40px;
-            font-family: cursive;
+    &-details {
+        &-name {
+            font-size: 24px;
+            font-family: "Poppins SemiBold";
         }
-    }
 
-    &-role-tagline {
-        font-size: 19px;
-        margin: 5px 0 0 0;
-        font-family: "Poppins Light";
+        &-role {
+            display: flex;
+            flex-direction: column;
+            margin: 14px 0 24px 0;
+
+            .h1 {
+                font-size: 40px;
+                font-family: "cursive";
+            }
+
+            &-tagline {
+                font-size: 19px;
+                margin: 5px 0 0 0;
+                font-family: "Poppins Light";
+            }
+        }
     }
 
     &-options {
         .highlighted-btn {
             margin: 0 0 0 28px;
+            border-radius: 12px solid white;
 
             &:hover {
                 margin: 0 0 0 28px;
@@ -62,9 +65,9 @@
         &-background {
             height: 92%;
             width: 92%;
-            background-image: url('../../assets/Home/profilephoto.jpg');
-            background-size: cover;
             border-radius: 50%;
+            background-image: url("../../assets/Home/profilephoto.jpg");
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
 
@@ -77,21 +80,23 @@
 }
 
 .primary-text {
-    color: (--white);
+    color:(--white);
 }
 
 .highlighted-text {
-    color: var(---dark-orange);
+    color: #ff5823;
 }
 
 .colz {
-    &-icon i {
-        color: white;
-        padding: 8px;
-        padding-left: 0px;
+    &-icon {
+        i {
+            color: white;
+            padding: 8px;
+            padding-left: 0px;
 
-        &:hover {
-            transform: scale(1.5);
+            &:hover {
+                transform: scale(1.5);
+            }
         }
     }
 }
