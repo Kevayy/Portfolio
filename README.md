@@ -1,2 +1,2 @@
 # Portfolio Kevay
-![Home Page](https://imgur.com/nzivUET)
+![Home Page](https://imgur.com/nzivUET.jpg)
